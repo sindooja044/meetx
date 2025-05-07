@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');  // This should be at the top of the file
 const app = require('./app');
+const mongoose = require('mongoose');
 require('dotenv').config();
 
 mongoose.connect(process.env.MONGO_URI)
@@ -9,6 +9,4 @@ mongoose.connect(process.env.MONGO_URI)
       console.log(`Server running on port ${process.env.PORT}`);
     });
   })
-  .catch(err => {
-    console.error('MongoDB connection error:', err);
-  });
+  .catch(err => console.error(err));
