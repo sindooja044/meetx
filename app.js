@@ -3,7 +3,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const activityRoutes = require('./routes/activityRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
-const errorHandler = require('./middleware/errorHandler');  // Import error handler
+const errorHandler = require('./middleware/errorHandler'); // Import error handler
 
 const app = express();
 
