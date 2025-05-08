@@ -17,6 +17,6 @@ const ActivitySchema = new mongoose.Schema({
   // Add other fields as needed
 });
 
-const Activity = mongoose.model('Activity', ActivitySchema, 'activities');
+const Activity = mongoose.model('Activity', ActivitySchema,'activities');
 
 module.exports = Activity;
